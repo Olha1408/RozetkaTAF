@@ -11,16 +11,22 @@ package testProject;
 //correctly by the from and to price filters you
 //entered.
 
-//https://rozetka.com.ua/ua/
 
 
+import baseTest.BaseTest;
 import org.junit.Test;
 
-public class Filter_TC {
+public class Filter_TC extends BaseTest {
+
+
+
 
     @Test
     public void TC1_checkingFilter() {
 
+        homePage.openHomePage();
+        homePage.goToHeadPhonesCatalog();
+        homePage.setFilterByColor();
 
 
     }
